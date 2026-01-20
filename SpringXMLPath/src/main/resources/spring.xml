@@ -8,9 +8,14 @@
     <!-- Dependency -->
     <bean id="computer" class="org.example.Laptop"/>
 
-    <!-- Bean with dependency -->
+<!--    &lt;!&ndash; Bean with dependency &ndash;&gt;-->
+<!--    <bean id="alien" class="org.example.Alien">-->
+<!--        <property name="computer" ref="computer"/>-->
+<!--    </bean>-->
+
+    <!-- Constructor Injection -->
     <bean id="alien" class="org.example.Alien">
-        <property name="computer" ref="computer"/>
+        <constructor-arg ref="computer"/>
     </bean>
 
 </beans>

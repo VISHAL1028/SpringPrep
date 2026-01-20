@@ -11,6 +11,6 @@ public class App {
                 new ClassPathXmlApplicationContext("spring.xml");
 
         Alien alien = (Alien) context.getBean("alien");
-        alien.code();40
+        alien.code();
     }
 }

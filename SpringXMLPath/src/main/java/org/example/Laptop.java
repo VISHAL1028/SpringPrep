@@ -4,6 +4,6 @@ public class Laptop implements Computer {
 
     @Override
     public void compile() {
-        System.out.println("Compiling code using Laptop");
+        System.out.println("Compiling using Laptop (Constructor Injection)");
     }
 }
