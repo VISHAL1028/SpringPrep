@@ -14,7 +14,7 @@
 <!--    </bean>-->
 
     <!-- Constructor Injection -->
-    <bean id="alien" class="org.example.Alien">
+    <bean id="alien" class="org.example.Alien"  scope="singleton">
         <constructor-arg ref="computer"/>
     </bean>
 

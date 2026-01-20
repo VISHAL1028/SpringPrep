@@ -10,7 +10,10 @@ public class App {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("spring.xml");
 
-        Alien alien = (Alien) context.getBean("alien");
-        alien.code();
+        Alien a1 = (Alien) context.getBean("alien");
+        Alien a2 = (Alien) context.getBean("alien");
+
+        System.out.println(a1);
+        System.out.println(a2);
     }
 }
